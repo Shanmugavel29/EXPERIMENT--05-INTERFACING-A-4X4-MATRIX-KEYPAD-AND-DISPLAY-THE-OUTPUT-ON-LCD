@@ -17,17 +17,13 @@ Pin Number	Pin Name	Description
 8	C4	Taken out from 4th  COLUMN
 4×4 Matrix Keypad Module Hardware Overview
 These Keypad modules are made of thin, flexible membrane material. The 4 x4 keypad module consists of 16 keys, these Keys are organized in a matrix of rows and columns. All these switches are connected to each other with a conductive trace. Normally there is no connection between rows and columns. When we will press a key, then a row and a column make contact.
-
 ## Procedure : 
  ## LCD 16X2 
    16×2 LCD is named so because; it has 16 Columns and 2 Rows. There are a lot of combinations available like,
    8×1, 8×2, 10×2, 16×1, etc. But the most used one is the 16*2 LCD, hence we are using it here.
-
 All the above mentioned LCD display will have 16 Pins and the programming approach is also the same and hence the choice is left to you. 
 4-bit and 8-bit Mode of LCD:
-
 The LCD can work in two different modes, namely the 4-bit mode and the 8-bit mode. In 4 bit mode we send the data nibble by nibble, first upper nibble and then lower nibble. For those of you who don’t know what a nibble is: a nibble is a group of four bits, so the lower four bits (D0-D3) of a byte form the lower nibble while the upper four bits (D4-D7) of a byte form the higher nibble. This enables us to send 8 bit data. Whereas in 8 bit mode we can send the 8-bit data directly in one stroke since we use all the 8 data lines. 8-bit mode is faster and flawless than 4-bit mode. But the major drawback is that it needs 8 data lines connected to the microcontroller. This will make us run out of I/O pins on our MCU, so 4-bit mode is widely used. No control pins are used to set these modes. 
-
  LCD Commands:
     There are some preset commands instructions in LCD, which we need to send to LCD through some microcontroller. Some important command instructions are given below:
 Hex Code
@@ -68,8 +64,6 @@ C2 - Jump to second line, position 2
 15. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
 15. click on debug and simulate using simulation as shown below 
 ## CIRCUIT DIAGRAM 
- 
-
 ## STM 32 CUBE PROGRAM :
 ```
 Developed By: SHANMUGAVEL.RM
